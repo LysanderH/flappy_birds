@@ -1,3 +1,5 @@
+import * as CONSTANTEN from './constanten'
+
 export const ground = {
     "game": game,
     "posX": 0,
@@ -6,10 +8,10 @@ export const ground = {
         this.game = game;
     },
     update() {
-        this.posX -= 1;
-        if (this.posX <= 288-336){
+        this.posX -= CONSTANTEN.GROUND_STEPS;
+        if (this.posX <= CONSTANTEN.CANVAS_WIDTH - CONSTANTEN.GROUND_WIDTH) {
             this.posX = 0;
         }
-        this.game.c.drawImage(this.game.sprite.spriteImg, 584, 0, 336, 112, this.posX, this.game.canvas.height - 112, 336, 112);
+        this.game.c.drawImage(this.game.spriteImg, CONSTANTEN.GROUND_SPRITE_POSX, 0, CONSTANTEN.GROUND_WIDTH, CONSTANTEN.GROUND_HEIGHT, this.posX, this.game.canvas.height - CONSTANTEN.GROUND_HEIGHT, CONSTANTEN.GROUND_WIDTH, CONSTANTEN.GROUND_HEIGHT);
     }
 }

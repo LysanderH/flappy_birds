@@ -1,20 +1,32 @@
-import {background} from './background'
-import {sprite} from './sprite'
-import {ground} from './ground'
+import {background} from './background';
+import {ground} from './ground';
+import {pipes} from './pipes';
+import {bird} from './bird';
+import {controller} from "./controller";
 
 const game = {
     "canvas": document.querySelector('#game'),
     "c": null,
+    "spriteUrl": '../resources/sprite.png',
+    "spriteImg": new Image(),
+
     "background": background,
-    "sprite": sprite,
     "ground": ground,
+    "pipes": pipes,
+    "bird": bird,
+    "controller": controller,
 
     init() {
         this.c = this.canvas.getContext('2d');
-        this.sprite.init(game);
-        this.background.init(this);
-        this.ground.init(this);
-        this.sprite.spriteImg.addEventListener('load', ()=>{
+
+        this.spriteImg.src = this.spriteUrl;
+
+        this.spriteImg.addEventListener('load', () => {
+            this.background.init(this);
+            this.ground.init(this);
+            this.pipes.init(this);
+            this.bird.init(this);
+            this.controller.init(this);
             this.animate();
         })
     },
@@ -24,10 +36,26 @@ const game = {
 
         this.background.update();
         this.ground.update();
+        this.pipes.update();
+        this.bird.update();
+        this.controller.update();
         requestAnimationFrame(() => {
             this.animate();
         });
+    },
+    renderSpriteFrame(frameX, frameY, frameW, frameH, canvasX, canvasY, canvasW, canvasH) {
+        this.c.drawImage(this.spriteImg,
+            frameX,
+            frameY,
+            frameW,
+            frameH,
+            canvasX,
+            canvasY,
+            canvasW,
+            canvasH
+        );
     }
+
 };
 
 game.init();
