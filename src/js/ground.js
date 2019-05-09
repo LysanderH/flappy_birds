@@ -3,15 +3,25 @@ import * as CONSTANTEN from './constanten'
 export const ground = {
     "game": game,
     "posX": 0,
-
+    'coordinates': {
+        frameX: 584,
+        frameY: 0,
+        frameW: 336,
+        frameH: 112,
+        canvasX: 0,
+        canvasY: 0,
+        canvasW: 336,
+        canvasH: 112,
+    },
     init(game) {
         this.game = game;
+        this.coordinates.canvasY = this.game.canvas.height - this.coordinates.frameH;
     },
     update() {
-        this.posX -= CONSTANTEN.GROUND_STEPS;
-        if (this.posX <= CONSTANTEN.CANVAS_WIDTH - CONSTANTEN.GROUND_WIDTH) {
-            this.posX = 0;
+        this.coordinates.canvasX -= CONSTANTEN.GROUND_STEPS;
+        if (this.coordinates.canvasX <= CONSTANTEN.CANVAS_WIDTH - CONSTANTEN.GROUND_WIDTH) {
+            this.coordinates.canvasX = 0;
         }
-        this.game.c.drawImage(this.game.spriteImg, CONSTANTEN.GROUND_SPRITE_POSX, 0, CONSTANTEN.GROUND_WIDTH, CONSTANTEN.GROUND_HEIGHT, this.posX, this.game.canvas.height - CONSTANTEN.GROUND_HEIGHT, CONSTANTEN.GROUND_WIDTH, CONSTANTEN.GROUND_HEIGHT);
+        this.game.renderSpriteFrame(this.coordinates);
     }
 }

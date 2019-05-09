@@ -2,9 +2,7 @@ export const bird = {
     'game': null,
     'frameInt': 0,
     'coordinates': {
-        frameX: [
-            6, 62, 118
-        ],
+        frameX: 0,
         frameY: 982,
         frameW: 34,
         frameH: 24,
@@ -14,31 +12,24 @@ export const bird = {
         canvasH: 24,
     },
     'birdstate': 0,
+    'dxs': [
+        6, 62, 118
+    ],
 
     init(game) {
         this.game = game;
-        this.coordinates.canvasY = this.game.canvas.height / 2
+        this.coordinates.canvasY = this.game.canvas.height / 2;
     },
     update() {
         this.frameInt += 1;
-        if (this.frameInt >= 10){
+        if (this.frameInt >= 5) {
             this.birdstate = this.birdstate + 1;
             this.frameInt = 0;
         }
-        if (this.birdstate >= this.coordinates.frameX.length) {
+        if (this.birdstate >= this.dxs.length) {
             this.birdstate = 0;
         }
-        // console.log(this.coordinates.frameX.length);
-        this.game.c.drawImage(
-            this.game.spriteImg,
-            this.coordinates.frameX[this.birdstate],
-            this.coordinates.frameY,
-            this.coordinates.frameW,
-            this.coordinates.frameH,
-            this.coordinates.canvasX,
-            this.coordinates.canvasY,
-            this.coordinates.canvasW,
-            this.coordinates.canvasH
-        );
+        this.coordinates.frameX = this.dxs[this.birdstate];
+        this.game.renderSpriteFrame(this.coordinates);
     }
-}
+};

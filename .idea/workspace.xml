@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ecd9f3b-0e48-49d9-8713-dc4dee10a53a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/._index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/._resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/._scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/resources/._bcg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/resources/._sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/scss/._main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/constanten.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/constanten.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/ground.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ground.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/pipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pipes.js" afterDir="false" />
@@ -29,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/pipes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state relative-caret-position="32">
+              <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -38,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/ground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="350">
+              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -47,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="207">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -59,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/bird.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="350">
+              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -68,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="128">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -103,11 +93,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/js/sprite.js" />
         <option value="$PROJECT_DIR$/src/js/background.js" />
-        <option value="$PROJECT_DIR$/src/js/ground.js" />
-        <option value="$PROJECT_DIR$/src/js/bird.js" />
+        <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/js/pipes.js" />
         <option value="$PROJECT_DIR$/src/js/controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main.js" />
+        <option value="$PROJECT_DIR$/src/js/ground.js" />
+        <option value="$PROJECT_DIR$/src/js/bird.js" />
       </list>
     </option>
   </component>
@@ -211,12 +201,12 @@
       <updated>1556778478229</updated>
       <workItem from="1556778481914" duration="36000" />
       <workItem from="1556778556422" duration="15013000" />
-      <workItem from="1557314087953" duration="7097000" />
+      <workItem from="1557314087953" duration="8905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22146000" />
+    <option name="totallyTimeSpent" value="23954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
@@ -312,29 +302,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/pipes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/ground.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="207">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -343,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/bird.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="350">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
         </state>
       </provider>
     </entry>

@@ -43,16 +43,16 @@ const game = {
             this.animate();
         });
     },
-    renderSpriteFrame(frameX, frameY, frameW, frameH, canvasX, canvasY, canvasW, canvasH) {
+    renderSpriteFrame(coordinates) {
         this.c.drawImage(this.spriteImg,
-            frameX,
-            frameY,
-            frameW,
-            frameH,
-            canvasX,
-            canvasY,
-            canvasW,
-            canvasH
+            coordinates.frameX,
+            coordinates.frameY,
+            coordinates.frameW,
+            coordinates.frameH,
+            coordinates.canvasX,
+            coordinates.canvasY,
+            coordinates.canvasW,
+            coordinates.canvasH
         );
     }
 
