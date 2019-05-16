@@ -1,6 +1,6 @@
 import {background} from './background';
 import {ground} from './ground';
-import {pipes} from './pipes';
+import {Pipes} from './pipes';
 import {bird} from './bird';
 import {controller} from "./controller";
 
@@ -12,9 +12,11 @@ const game = {
 
     "background": background,
     "ground": ground,
-    "pipes": pipes,
+    "pipe": null,
     "bird": bird,
     "controller": controller,
+
+    "counter": 0,
 
     init() {
         this.c = this.canvas.getContext('2d');
@@ -24,7 +26,6 @@ const game = {
         this.spriteImg.addEventListener('load', () => {
             this.background.init(this);
             this.ground.init(this);
-            this.pipes.init(this);
             this.bird.init(this);
             this.controller.init(this);
             this.animate();
@@ -35,10 +36,12 @@ const game = {
 
 
         this.background.update();
-        this.ground.update();
-        this.pipes.update();
         this.bird.update();
-        this.controller.update();
+        // console.log(Pipes);
+        this.Pipes = new Pipes(game);
+        this.Pipes.update();
+        this.ground.update();
+        this.counter =+ 1;
         requestAnimationFrame(() => {
             this.animate();
         });
